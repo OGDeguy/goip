@@ -52,6 +52,20 @@ func inc(ip net.IP) {
 		}
 	}
 }
+// IsPrivate return true if the IPv4 address supplied is included in a private network as defined by RFC-1918
+func IsPrivate(ip string) bool {
+	ipObj := net.ParseIP(ip)
+	_, netA, _ := net.ParseCIDR("10.0.0.0/8")
+	_, netB, _ := net.ParseCIDR("192.168.0.0/16")
+	_, netC, _ := net.ParseCIDR("172.16.0.0/12")
+	privateNets := []*net.IPNet{netA, netB, netC}
+	for _, network := range privateNets {
+		if network.Contains(ipObj) {
+			return true
+		}
+	}
+	return false
+}
 
 func main() {
 	test, err := NewCIDR("166.168.0.0/24")
