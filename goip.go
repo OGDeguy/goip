@@ -16,7 +16,7 @@ type IPv4CIDR struct {
 	Hosts []string
 	NetworkIP string
 }
-// NewCIDR is constructor function that init populates an IPv4CIDR struct.
+// NewCIDR is constructor function that populates an IPv4CIDR struct.
 func NewCIDR(cidr string) (*IPv4CIDR, error) {
 	if len(strings.Split(cidr, "/")) < 2 {
 		return nil, errors.New("address is not a CIDR")
