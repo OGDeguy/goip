@@ -12,3 +12,8 @@ func ExampleIsPrivate() {
 	fmt.Println(IsPrivate("192.168.0.1"))
 	// Output: true
 }
+
+func ExampleIsCIDR() {
+	fmt.Println(IsCIDR("192.168.0.0/24"))
+	// Output: true
+}

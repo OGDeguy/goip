@@ -66,6 +66,17 @@ func IsPrivate(ip string) bool {
 	}
 	return false
 }
+// IsCIDR returns true if ip has been supplied in CIDR (192.168.0.0/24) format
+func IsCIDR(ip string) bool {
+	if len(strings.Split(ip,"/")) == 2 {
+		_, _, err := net.ParseCIDR(ip)
+		if err != nil {
+			return false
+		}
+		return true
+	}
+	return false
+}
 
 func main() {
 	test, err := NewCIDR("166.168.0.0/24")
