@@ -13,7 +13,7 @@ package main
 
 import (
 
-"goip"
+"goip/goip"
 "log"
 )
 
