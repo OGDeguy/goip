@@ -4,7 +4,7 @@ Simple library for working with IPv4 ranges in GoLang. Currently only supports I
 ## Documentation
 
 Documentation and additional examples are available at godoc:
-https://godoc.org/github.com/OGDeguy/goip
+https://pkg.go.dev/github.com/OGDeguy/goip
 
 ## Example
 
