@@ -1,5 +1,4 @@
 [![Build Status](https://travis-ci.org/OGDeguy/goip.svg?branch=main)](https://travis-ci.org/OGDeguy/goip) 
-[![Coverage Status](https://coveralls.io/repos/github/OGDeguy/goip/badge.svg?branch=main)](https://coveralls.io/github/OGDeguy/goip?branch=main)
 # GoIP
 Simple library for working with IPv4 ranges in GoLang. Currently only supports IPv4 CIDRs.
 
