@@ -13,7 +13,7 @@ package main
 
 import (
 
-"goip/goip"
+"github.com/OGDeguy/goip/goip"
 "log"
 )
 
