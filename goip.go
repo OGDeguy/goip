@@ -2,8 +2,6 @@ package goip
 
 import (
 	"errors"
-	"fmt"
-	"log"
 	"net"
 	"strings"
 )
@@ -76,15 +74,4 @@ func IsCIDR(ip string) bool {
 		return true
 	}
 	return false
-}
-
-func main() {
-	test, err := NewCIDR("166.168.0.0/24")
-	if err != nil {
-		log.Fatalln(err)
-	} else {
-		fmt.Println("Valid Hosts: ", len(test.Hosts))
-		fmt.Println("Broadcast Address: ", test.Broadcast)
-		fmt.Println("Network Address: ", test.NetworkIP)
-	}
 }
