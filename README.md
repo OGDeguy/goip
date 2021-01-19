@@ -6,6 +6,8 @@ Simple library for working with IPv4 ranges in GoLang. Currently only supports I
 Documentation and additional examples are available at godoc:
 https://pkg.go.dev/github.com/OGDeguy/goip
 
+[![Go Reference](https://pkg.go.dev/badge/github.com/OGDeguy/goip.svg)](https://pkg.go.dev/github.com/OGDeguy/goip)
+
 ## Example
 
 ```go
