@@ -1,3 +1,3 @@
-module goip/goip
+module goip
 
 go 1.15

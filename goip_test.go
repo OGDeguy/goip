@@ -1,6 +1,8 @@
 package goip
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func ExampleNewCIDR () {
 	cidr, _ := NewCIDR("192.168.1.0/24")
